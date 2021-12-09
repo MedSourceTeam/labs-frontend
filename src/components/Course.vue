@@ -1,8 +1,12 @@
 <template>
-  <div class="col-12 col-md-6 col-lg-4 text-center">
-    <h1><b>Nombre Curso:</b>{{ enrolled.courseName }}</h1>
-    <h3>{{ enrolled.courseDurationHours }}</h3>
-    <h6>{{ enrolled.role.roleName }}</h6>
+  <div class="card m-3" style="width: 18rem;">
+    <div class="card-header">
+      {{enrolled.courseName}}
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">{{ enrolled.courseDurationHours }}</li>
+      <li class="list-group-item">{{ enrolled.role.roleName }}</li>
+    </ul>
   </div>
 </template>
 

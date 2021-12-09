@@ -1,8 +1,11 @@
 <template>
+  <div class="container my-5">
+    <h2>Mis cursos</h2>
   <div class="row">
-    <Course v-for="enrolled in enrollments"
-            :key="enrolled.courseId + '-' + enrolled.role.id"
-            :enrolled="enrolled"></Course>
+      <Course v-for="enrolled in enrollments"
+              :key="enrolled.courseId + '-' + enrolled.role.id"
+              :enrolled="enrolled"></Course>
+  </div>
   </div>
 </template>
 
